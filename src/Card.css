@@ -1,8 +1,30 @@
 .cards {
-            width: 400px;
+            width: 300px;
+            height: 320px;
+            border: 2px solid rgb(136, 136, 136);
+            background-color: aliceblue;    
+            text-align: center;
+            transition: transform .2s;
 
 }
+
+.cards:hover {
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1); 
+}
+
+.button {
+                background-color: blue;
+                color: white;
+                padding: 10px;
+                border-radius: 2px;
+                text-decoration: none;
+                
+}
+
 
 .img {
         width: 300px;
 }
+

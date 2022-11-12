@@ -12,11 +12,18 @@ export default function Card(props) {
             <div className='cardbody'>
                 <span className='card_category'>{props.title}</span>
                 <h3 className='cardtitle'>{props.sname}</h3>
-                <a href={props.link} target='blank'>Watch Now</a>
-                <button> Watch Now</button>
+                <a className='button' href={props.link} target='blank'>Watch Now</a>
             </div>
         </div>    
      </div>
     </>
   );
+}
+
+
+
+export const Time = () => {
+  return (
+    <div></div>
+  )
 }

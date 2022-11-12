@@ -5,17 +5,28 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Card from './Card';
 import './Card.css'
+import MapData, { Cardscroll } from './MapData';
+import { Rcard } from './Rcard';
+import Practise from './Practise';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    <Card
+   
+    {/* <Card
     img='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
     title=' A Amzone Orignal Siaris'
     sname='Dark'
     link='https://www.primevideo.com/storefront/ref=atv_cat_sports?contentType=merch&merchId=Sports'
      />
+    
+     <Time /> */}
+     {/* <MapData />
+    <Rcard /> */}
+    <Practise />
+     
   </React.StrictMode>
 );
 

@@ -10,6 +10,7 @@ import { Rcard } from './Rcard';
 import Practise from './Practise';
 import { Menu } from './Menu';
 import { Datafatch } from './Datafatch';
+import { Efect } from './Efect';
 
 
 
@@ -29,7 +30,8 @@ root.render(
     {/* <Rcard />  */}
     {/* <Practise /> */}
      {/* <Menu /> */}
-     <Datafatch />
+     {/* <Datafatch /> */}
+     <Efect  />
   </React.StrictMode>
 );
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+// import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Card from './Card';
@@ -8,6 +8,8 @@ import './Card.css'
 import MapData, { Cardscroll } from './MapData';
 import { Rcard } from './Rcard';
 import Practise from './Practise';
+import { Menu } from './Menu';
+import { Datafatch } from './Datafatch';
 
 
 
@@ -23,10 +25,11 @@ root.render(
      />
     
      <Time /> */}
-     {/* <MapData />
-    <Rcard /> */}
-    <Practise />
-     
+      {/* <MapData /> */}
+    {/* <Rcard />  */}
+    {/* <Practise /> */}
+     {/* <Menu /> */}
+     <Datafatch />
   </React.StrictMode>
 );
 

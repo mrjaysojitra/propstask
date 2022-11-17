@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import './index.css';
-import App from './App';
+import { App } from './App';
 import reportWebVitals from './reportWebVitals';
 import Card from './Card';
 import './Card.css'
@@ -11,6 +11,10 @@ import Practise from './Practise';
 import { Menu } from './Menu';
 import { Datafatch } from './Datafatch';
 import { Efect } from './Efect';
+import { Axio2, Axios } from './Axios';
+import { Employe } from './Employe';
+import { Secondf } from './Secondf';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -31,7 +35,12 @@ root.render(
     {/* <Practise /> */}
      {/* <Menu /> */}
      {/* <Datafatch /> */}
-     <Efect  />
+     {/* <Efect  /> */}
+     {/* <App /> */}
+     {/* <Axios />
+     <Axio2 /> */}
+     {/* <Employe /> */}
+     <Secondf />
   </React.StrictMode>
 );
 

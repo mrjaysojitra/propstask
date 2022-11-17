@@ -1,29 +1,23 @@
 import { useState } from "react";
 
 function Practise() {
-  const [ count, setCount ] =useState(0);
-  
+  const [count, setCount] = useState(0);
+
   const Add = () => {
-    setCount(count+1)
-  }
+    setCount(count + 1);
+  };
 
   const Mine = () => {
-
-    if(count == 0)
-    {
-        setCount(count);
-
+    if (count == 0) {
+      setCount(count);
+    } else {
+      setCount(count - 1);
     }
-    else
-    {
-    setCount(count-1)
-    }
-  }
+  };
 
   const Divi = () => {
-    setCount(count/2)
-  }
-
+    setCount(count / 2);
+  };
 
   return (
     <div className="App">
@@ -32,7 +26,6 @@ function Practise() {
       <button onClick={Mine}>Click Me</button>
       <button onClick={Divi}>Click Me</button>
     </div>
-    
   );
 }
 

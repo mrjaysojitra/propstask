@@ -1,3 +1,9 @@
+body{
+  /* background: #53f0f2;
+  background: -webkit-radial-gradient(circle, #53f0f2 0%, #104bb0 100%);
+  background: radial-gradient(circle, #53f0f2 0%, #104bb0 100%); */
+}   
+
 h1 {
    border-bottom: 1px solid white;
    color: #3d3d3d;
@@ -10,7 +16,7 @@ h1 {
  }
 
  form {
-   background: white;
+   background: rgba(255, 255, 255, 0.502);
    border: 1px solid #dedede;
    display: flex;
    flex-direction: column;
@@ -32,17 +38,11 @@ h1 {
    color: #3d3d3d;
    display: block;
    font-family: sans-serif;
-   font-size: 14px;
+   font-size: 15px;
    font-weight: 500;
    margin-bottom: 5px;
  }
 
- .error {
-   color: red;
-   font-family: sans-serif;
-   font-size: 12px;
-   height: 30px;
- }
 
  .submitButton {
    background-color: #6976d9;
@@ -51,5 +51,19 @@ h1 {
    font-size: 14px;
    margin: 20px 0px;
    padding: 10px;
+   border: none;
+   
  }
+
+.data {
+  background: white;
+  border: 1px solid #dedede;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 30px 20px;
+  text-align: center;
+}
 

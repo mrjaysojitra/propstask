@@ -15,6 +15,17 @@ import { Axio2, Axios } from './Axios';
 import { Employe } from './Employe';
 import { Secondf } from './Secondf';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Locform } from './Locform';
+import { Datausa, Datausa2, Datausa3, Datausa4, Datausa5, Datausa6 } from './Datausa';
+import { Newform } from './Newform';
+import { Form2, Form3 } from './Form2';
+import { IAMJAY, IAMJAY2, IAMJAY3 } from './IAMJAY';
+import { Looping } from './Looping';
+import { NEWFOR } from './NEWFOR';
+import { AG, AG2 } from './AG';
+import Classc from './Classc';
+
+
 
 
 
@@ -40,7 +51,24 @@ root.render(
      {/* <Axios />
      <Axio2 /> */}
      {/* <Employe /> */}
-     <Secondf />
+     {/* <Secondf /> */}
+     {/* <Locform /> */}
+     {/* <Datausa /> */}
+     {/* <Newform /> */}
+     {/* <Datausa2 /> */}
+     {/* <Datausa3 /> */}
+     {/* <Datausa4 /> */}
+     {/* <Datausa5 /> */}
+     {/* <Datausa6 /> */}
+     {/* <Form3/> */}
+     {/* <IAMJAY /> */}
+     {/* <IAMJAY2 /> */}
+     {/* <IAMJAY3 /> */}
+     {/* <Looping /> */}
+     {/* <NEWFOR /> */}
+     {/* <AG /> */}
+     {/* <AG2/> */}
+     <Classc />
   </React.StrictMode>
 );
 

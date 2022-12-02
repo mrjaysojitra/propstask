@@ -7,8 +7,7 @@ export const Axios = () => {
   useEffect(() => {
     axios
       .get("https://api.rootnet.in/covid19-in/stats/testing/history")
-      .then((j) => {
-        setData(j.data.data);
+      .then((j) => {  setData(j.data.data);
       });
   }, []);
   return (
@@ -33,9 +32,7 @@ export const Axio2 = () => {
 
   useEffect(() => {
     axios.get("https://api.escuelajs.co/api/v1/users")
-    .then((s) => {
-      setUp(s.data);
-    });
+    .then((s) => {setUp(s.data);});
   }, []);
   return (
     <div>

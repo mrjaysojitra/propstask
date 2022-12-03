@@ -24,6 +24,7 @@ import { Looping } from './Looping';
 import { NEWFOR } from './NEWFOR';
 import { AG, AG2 } from './AG';
 import Classc from './Classc';
+import { Poseapi } from './Poseapi';
 
 
 
@@ -68,7 +69,8 @@ root.render(
      {/* <NEWFOR /> */}
      {/* <AG /> */}
      {/* <AG2/> */}
-     <Classc />
+     {/* <Classc /> */}
+     <Poseapi/>
   </React.StrictMode>
 );
 

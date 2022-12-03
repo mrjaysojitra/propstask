@@ -25,7 +25,9 @@ import { NEWFOR } from './NEWFOR';
 import { AG, AG2 } from './AG';
 import Classc from './Classc';
 import { Poseapi } from './Poseapi';
-
+import { Login } from './Login';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -70,7 +72,9 @@ root.render(
      {/* <AG /> */}
      {/* <AG2/> */}
      {/* <Classc /> */}
-     <Poseapi/>
+     {/* <Poseapi/> */}
+     <ToastContainer />
+     <Login/>
   </React.StrictMode>
 );
 

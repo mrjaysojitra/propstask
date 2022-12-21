@@ -39,15 +39,37 @@ import { USEMEMO } from './USEMEMO';
 import {Provider} from 'react-redux';
 import { Counter } from './Counter';
 import store from './store/store';
+import { AGGRID, Test3, Test4 } from './Test3';
 
-
+import  Global  from './axios/Global';
+import { Video } from './Video';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
+import Header from './Header';
+import { Contact } from './Contact';
+import { Blogs } from './Blogs';
+import { Home } from './Home';
+import { Arror } from './Arror';
+import { Footer } from './Footer';
+import { Usestate1 } from './Usestate1';
+import { MYreducer, Myreducer } from './Myreducer';
+import { User } from './User';
+import { Html } from './Html';
+import { Css } from './Css';
 
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+
 root.render(
   <React.StrictMode>
+
+  <BrowserRouter>
+  <App />
+  </BrowserRouter>
    
     {/* <Card
     img='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
@@ -63,7 +85,7 @@ root.render(
      {/* <Menu /> */}
      {/* <Datafatch /> */}
      {/* <Efect  /> */}
-     {/* <App /> */}
+   
      {/* <Axios />
      <Axio2 /> */}
      {/* <Employe /> */}
@@ -86,19 +108,45 @@ root.render(
      {/* <AG2/> */}
      {/* <Classc /> */}
      {/* <Poseapi/> */}
-     <ToastContainer />
-     {/* <Login/> */}
+     {/* <ToastContainer />
+     <Login/> */}
      {/* <Test/> */}
      {/* <Display /> */}
      {/* <DATADI /> */}
      {/* <Task2 /> */}
+     {/* <Test3 />
+     <Test4 />
+     <AGGRID /> */}
      {/* <Matirialuiform /> */}
      {/* <Myitemdeta />
      <USEMEMO text="my name is a jay sojitra. i am 20 year old. i am pursuing in bechalor of commerce. i am study in ms university. i am from rajkot" /> */}
 
-     <Provider store={store}>
+     {/* <Provider store={store}>
       <Counter/>
-     </Provider>
+     </Provider> */}
+     
+     {/* <Video /> */}
+
+     {/* <BrowserRouter>
+     <Header />
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="User" element={<User/>}>
+            <Route path="Html" element={<Html/>}/>
+            <Route path="Css" element={<Css/>}/>
+          </Route>
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Arror />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter> */}
+
+    {/* <Usestate1 /> */}
+    {/* <MYreducer /> */}
+    
+  
+     
   </React.StrictMode>
 );
 

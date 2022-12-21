@@ -28,6 +28,19 @@ import { Poseapi } from './Poseapi';
 import { Login } from './Login';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Test } from './Test';
+import { Displayimg } from './Displayimg';
+import { Display } from './Display';
+import { Task2 } from './Task2';
+import { DATADI } from './DATADI';
+import { Matirialuiform } from './Matirialuiform';
+import { Myitemdeta } from './Myitemdeta';
+import { USEMEMO } from './USEMEMO';
+import {Provider} from 'react-redux';
+import { Counter } from './Counter';
+import store from './store/store';
+
+
 
 
 
@@ -74,7 +87,18 @@ root.render(
      {/* <Classc /> */}
      {/* <Poseapi/> */}
      <ToastContainer />
-     <Login/>
+     {/* <Login/> */}
+     {/* <Test/> */}
+     {/* <Display /> */}
+     {/* <DATADI /> */}
+     {/* <Task2 /> */}
+     {/* <Matirialuiform /> */}
+     {/* <Myitemdeta />
+     <USEMEMO text="my name is a jay sojitra. i am 20 year old. i am pursuing in bechalor of commerce. i am study in ms university. i am from rajkot" /> */}
+
+     <Provider store={store}>
+      <Counter/>
+     </Provider>
   </React.StrictMode>
 );
 

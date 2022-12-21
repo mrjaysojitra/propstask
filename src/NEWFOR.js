@@ -59,6 +59,7 @@ export const NEWFOR = () => {
   return (
     <div>
       <form onSubmit={mySubmit}>
+      
         <h1>Student List</h1>
         <label>First Name</label>
         <input type="text" value={data.firstname} onChange={myHandler} name="firstname"></input>

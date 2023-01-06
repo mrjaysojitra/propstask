@@ -4,6 +4,7 @@ import { Plus, Minus, asncMinus  } from './action/action';
 
 
 
+
 export const Counter = () => {
 
     const data = useSelector(y=>y.counter)
@@ -32,3 +33,4 @@ export const Counter = () => {
     </div>
   )
 }
+

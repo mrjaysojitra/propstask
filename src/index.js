@@ -72,6 +72,9 @@ import MyHoc from './Hoc';
 import store from './store/store';
 import { Userthunkapi } from './Userthunkapi';
 import { CounterSaga } from './CounterSaga';
+import { MYpost } from './MYpost';
+import Counter3 from './Counter3';
+import Store2 from './store/Store2';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -136,10 +139,12 @@ root.render(
      {/* <Myitemdeta />
      <USEMEMO text="my name is a jay sojitra. i am 20 year old. i am pursuing in bechalor of commerce. i am study in ms university. i am from rajkot" /> */}
 
-     <Provider store={store} >
+     <Provider store={Store2} >
+     <Counter3 />
+     {/* <MYpost /> */}
       {/* <Counter/> */}
       {/* <Userthunkapi /> */}
-      <CounterSaga />
+      {/* <CounterSaga /> */}
      </Provider>
      
      {/* <Video /> */}

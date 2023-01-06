@@ -25,7 +25,7 @@
 //     confirmpassword: "",
 //   });
 
-//   const [row, setrow] = useState([]);
+// //   const [row, setrow] = useState([]);
 
 //   const [col, setcol] = useState([
 //     { field: "FirstName", filter: true },
@@ -228,7 +228,7 @@
 //       </form>
 
 //       <div className="ag-theme-alpine" style={{ width: 800, height: 800 }}>
-//         <AgGridReact rowData={row} columnDefs={}></AgGridReact>
+//         {/* <AgGridReact rowData={row} columnDefs={}></AgGridReact> */}
 //       </div>
 //     </div>
 //   );

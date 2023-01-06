@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense,lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 // import './index.css';
 import { App } from './App';
@@ -38,7 +38,7 @@ import { Myitemdeta } from './Myitemdeta';
 import { USEMEMO } from './USEMEMO';
 import {Provider} from 'react-redux';
 import { Counter } from './Counter';
-import store from './store/store';
+// import store from './store/store';
 import { AGGRID, Test3, Test4 } from './Test3';
 
 import  Global  from './axios/Global';
@@ -48,7 +48,7 @@ import { Outlet, Link } from "react-router-dom";
 import Header from './Header';
 import { Contact } from './Contact';
 import { Blogs } from './Blogs';
-import { Home } from './Home';
+
 import { Arror } from './Arror';
 import { Footer } from './Footer';
 import { Usestate1 } from './Usestate1';
@@ -57,19 +57,34 @@ import { User } from './User';
 import { Html } from './Html';
 import { Css } from './Css';
 
-
+import { Logint } from './Login/Logint';
+import Require from './Login/Require';
+import { Sigup } from './Login/Sigup';
+import { Upload } from './Upload';
+import { Inquiry } from './Inquiry';
+import {ErrorBoundary} from 'react-error-boundary'
+import BuggyCounter from './BuggyCounter';
+import { Customstate } from './Customstate';
+import { Apicustom } from './Apicustom';
+import { Errorf } from './Errorf';
+import { Nav } from './Nav';
+import MyHoc from './Hoc'; 
+import store from './store/store';
+import { Userthunkapi } from './Userthunkapi';
+import { CounterSaga } from './CounterSaga';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// let HomeHoc1 = MyHoc(HomeLazy1);
+// const HomeLazy1 =React.lazy(()=> import('./TestRavi'))
 
 
 
 root.render(
   <React.StrictMode>
 
-  <BrowserRouter>
-  <App />
-  </BrowserRouter>
+  
    
     {/* <Card
     img='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
@@ -121,30 +136,53 @@ root.render(
      {/* <Myitemdeta />
      <USEMEMO text="my name is a jay sojitra. i am 20 year old. i am pursuing in bechalor of commerce. i am study in ms university. i am from rajkot" /> */}
 
-     {/* <Provider store={store}>
-      <Counter/>
-     </Provider> */}
+     <Provider store={store} >
+      {/* <Counter/> */}
+      {/* <Userthunkapi /> */}
+      <CounterSaga />
+     </Provider>
      
      {/* <Video /> */}
 
-     {/* <BrowserRouter>
-     <Header />
+     {/* <BrowserRouter> 
+    <Suspense fallback={<div>Loading.....</div>}>
+    <Header />
       <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="User" element={<User/>}>
+      
+          <Route path="/" element={<HomeLazy1 />} />
+          <Route path="/Locform" element={<Locform />} />
+          <Route path="/Contact" element={<Contact />} />
+           <Route path="User" element={<User/>}>
             <Route path="Html" element={<Html/>}/>
             <Route path="Css" element={<Css/>}/>
-          </Route>
-          <Route path="/contact" element={<Contact />} />
+        
+          </Route> 
+         
           <Route path="*" element={<Arror />} />
       </Routes>
-      <Footer />
+      </Suspense>
     </BrowserRouter> */}
 
+    {/* <Upload /> */}
     {/* <Usestate1 /> */}
     {/* <MYreducer /> */}
+
+    {/* <Inquiry /> */}
+
+   
+{/*       
+    <ErrorBoundary
+    FallbackComponent={Errorf}
+   
+  >
+  <Nav />
+      <BuggyCounter/>
+      </ErrorBoundary> */}
     
+    
+  {/* <CollapsibleExample />  
+   <Apicustom /> */}
+
   
      
   </React.StrictMode>

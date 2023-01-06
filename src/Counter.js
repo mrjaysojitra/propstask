@@ -1,25 +1,34 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { Increment,Dicrement } from './action/action'
+import { Plus, Minus, asncMinus  } from './action/action';
+
+
 
 export const Counter = () => {
 
-    const data = useSelector(y=>y)
+    const data = useSelector(y=>y.counter)
 
     const mydis = useDispatch();
 
-    const Increment1 = () => {
-        mydis(Increment())
+    const PlusData = () => {
+        mydis(Plus())
     }
 
-    const Dicrement2 = () => {
-        mydis(Dicrement())
+    const MinusData = () => {
+        mydis(Minus())
     }
+
+    const Minuscounterdata = () => {
+      mydis(asncMinus(4))
+    }
+
   return (
     <div>{data}
-    <button onClick={Increment1}>Increment</button>
+    <button onClick={PlusData}>Increment</button>
 
-    <button onClick={Dicrement2}>Dicrement</button>
+    <button onClick={MinusData}>Dicrement</button>
+
+    <button onClick={Minuscounterdata}>asncMinus</button>
     </div>
   )
 }

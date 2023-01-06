@@ -1,64 +1,75 @@
-import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
-import { Field, Formik, Form } from "formik";
-import React from "react";
-// import Custom from "./axios/Custom"
+// import axios from "axios";
+// import { ToastContainer, toast } from "react-toastify";
+// import { Field, Formik, Form } from "formik";
+// import React from "react";
+// import { useNavigate } from "react-router-dom";
+// // import Custom from "./axios/Custom"
 
-export const Login = () => {
+// export const Login = () => {
 
-  const displaydata = () => {
-    let data = localStorage.getItem("user");
-    let j = JSON.parse(data);
+//   const displaydata = () => {
+//     let data = localStorage.getItem("user");
+//     let j = JSON.parse(data);
 
-    axios
-      .get("http://localhost:4000/accounts")
+//     const myNav = useNavigate();
+
+
+//     axios
+//       .get("http://localhost:4000/accounts")
        
    
-      .then((y) => {
-        console.log(y.data);
-      })
-      .catch((y) => {
-        console.log(y);
-      });
-  };
-  return (
-  <>
-    <Formik
-      initialValues={{
-        email: "",
-        password: "",
-      }}
-      onSubmit={(e) => {
-        console.log(e);
-        axios
-          .post("http://localhost:4000/accounts/authenticate", e)
-          .then((y) => {
-            console.log(y);
-            localStorage.setItem("user", JSON.stringify(y.data));
-            toast("Login Successfully");
-          })
-          .catch((y) => {
-            toast("Login Faild");
+//       .then((y) => {
+//         console.log(y.data);
+//       })
+//       .catch((y) => {
+//         console.log(y);
+//       });
+//   };
+//   return (
+//   <>
+//     <Formik
+//       initialValues={{
+//         email: "",
+//         password: "",
+//       }}
+//       onSubmit={(e) => {
+//         console.log(e);
+//         axios
+//           .post("http://localhost:4000/accounts/authenticate", e)
+//           .then((y) => {
+//             console.log(y);
+//             localStorage.setItem("user", JSON.stringify(y.data));
+//             toast("Login Successfully");
+//           })
+//           .catch((y) => {
+//             toast("Login Faild");
 
-            console.log(y);
-          });
-      }}
-    >
-      <Form>
-        <label>email</label>
-        <Field type="email" name="email" id="email" />
+//             console.log(y);
+//           });
 
-        <label>password</label>
-        <Field type="password" name="password" id="password" />
-        <br />
+//           localStorage.setItem("",JSON.stringify(y.data))
 
-        <input type="submit"></input>
+//           myNav(".")
+//       }}
+//     >
+//       <Form>
+//         <label>email</label>
+//         <Field type="email" name="email" id="email" />
 
-      </Form>
-    </Formik>
+//         <label>password</label>
+//         <Field type="password" name="password" id="password" />
+//         <br />
 
-    <button onClick={displaydata}>Fatch Now</button>
+//         <input type="submit"></input>
 
-  </>  
-  );
-};
+//       </Form>
+//     </Formik>
+
+//     <button onClick={displaydata}>Fatch Now</button>
+
+//   </>  
+//   );
+// };
+
+
+

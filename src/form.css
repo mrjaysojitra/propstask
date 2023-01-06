@@ -2,6 +2,7 @@ body{
   /* background: #53f0f2;
   background: -webkit-radial-gradient(circle, #53f0f2 0%, #104bb0 100%);
   background: radial-gradient(circle, #53f0f2 0%, #104bb0 100%); */
+
 }   
 
 h1 {
@@ -22,7 +23,7 @@ h1 {
    flex-direction: column;
    justify-content: space-around;
    margin: 0 auto;
-   max-width: 500px;
+   max-width: 600px;
    padding: 30px 50px;
  }
 

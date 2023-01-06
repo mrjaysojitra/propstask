@@ -1,5 +1,6 @@
 import React from 'react'
 import { Outlet, Link } from "react-router-dom";
+import CustComLink from './CustComLink';
 
 export const Header = () => {
   return (
@@ -12,13 +13,13 @@ export const Header = () => {
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-      <Link class="nav-link" to="/">Home</Link>
+      <CustComLink class="nav-link" to="/">Home</CustComLink>
       </li>
       <li class="nav-item">
-      <Link class="nav-link" to="/blogs">blogs</Link>
+      <CustComLink class="nav-link" to="/Contact">Contact</CustComLink>
       </li>
       <li class="nav-item">
-      <Link class="nav-link" to="/contact">contact</Link>
+      <CustComLink class="nav-link" to="/Locform">Locform</CustComLink>
       </li>
     
     </ul>

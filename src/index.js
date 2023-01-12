@@ -75,6 +75,11 @@ import { CounterSaga } from './CounterSaga';
 import { MYpost } from './MYpost';
 import Counter3 from './Counter3';
 import Store2 from './store/Store2';
+import { Post } from './post/Post';
+import { Post2 } from './post/Post2';
+import Classcom from './Class/Classcom';
+import Myform from './Class/Myform';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -140,7 +145,9 @@ root.render(
      <USEMEMO text="my name is a jay sojitra. i am 20 year old. i am pursuing in bechalor of commerce. i am study in ms university. i am from rajkot" /> */}
 
      <Provider store={Store2} >
-     <Counter3 />
+      {/* <Post /> */}
+      {/* <Post2 /> */}
+     {/* <Counter3 /> */}
      {/* <MYpost /> */}
       {/* <Counter/> */}
       {/* <Userthunkapi /> */}
@@ -188,7 +195,8 @@ root.render(
   {/* <CollapsibleExample />  
    <Apicustom /> */}
 
-  
+   {/* <Classcom /> */}
+   <Myform />
      
   </React.StrictMode>
 );

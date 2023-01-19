@@ -276,6 +276,7 @@ export const Form2lave3 = () => {
       })}
       <button onClick={handleReset}>Reset</button>
       <button onClick={onSubmited}>Submit</button>
+    
         </form>        
     </div>
   )

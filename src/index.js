@@ -79,6 +79,8 @@ import { Post } from './post/Post';
 import { Post2 } from './post/Post2';
 import Classcom from './Class/Classcom';
 import Myform from './Class/Myform';
+import { Formadd } from './lavel 3/Formadd';
+import { Form2lave3 } from './lavel 3/Form2lave3';
 
 
 
@@ -194,10 +196,11 @@ root.render(
     
   {/* <CollapsibleExample />  
    <Apicustom /> */}
-
+  
    {/* <Classcom /> */}
-   <Myform />
-     
+   {/* <Myform /> */}
+    {/* <Formadd />  */}
+    <Form2lave3 />
   </React.StrictMode>
 );
 

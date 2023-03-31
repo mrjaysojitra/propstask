@@ -81,6 +81,11 @@ import Classcom from './Class/Classcom';
 import Myform from './Class/Myform';
 import { Formadd } from './lavel 3/Formadd';
 import { Form2lave3 } from './lavel 3/Form2lave3';
+import { Apidata } from './lavel 3/Apidata';
+import Myitems from './Myitems';
+
+
+
 
 
 
@@ -143,8 +148,9 @@ root.render(
      <Test4 />
      <AGGRID /> */}
      {/* <Matirialuiform /> */}
-     {/* <Myitemdeta />
-     <USEMEMO text="my name is a jay sojitra. i am 20 year old. i am pursuing in bechalor of commerce. i am study in ms university. i am from rajkot" /> */}
+     <Myitemdeta />
+     
+     {/* <USEMEMO text="my name is a jay sojitra. i am 20 year old. i am pursuing in bechalor of commerce. i am study in ms university. i am from rajkot" /> */}
 
      <Provider store={Store2} >
       {/* <Post /> */}
@@ -200,7 +206,14 @@ root.render(
    {/* <Classcom /> */}
    {/* <Myform /> */}
     {/* <Formadd />  */}
-    <Form2lave3 />
+    {/* <Form2lave3 /> */}
+    {/* <App /> */}
+
+    {/* <Sigup /> */}
+    
+  
+    {/* <Apidata /> */}
+  
   </React.StrictMode>
 );
 

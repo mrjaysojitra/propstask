@@ -1,6 +1,4 @@
 import React, { useEffect,useState } from 'react'
-import 'ag-grid-community/styles/ag-grid.css'; // Core grid CSS, always needed
-import 'ag-grid-community/styles/ag-theme-alpine.css'; // Optional theme CSS
 import { AgGridReact } from 'ag-grid-react'; // the AG Grid React Component
 
 

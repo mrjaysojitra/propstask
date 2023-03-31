@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 
 export const Logint = () => {
-    const myNav = useNavigate();
+    // const myNav = useNavigate();
     
     const displaydata = () => {
         let data = localStorage.getItem("user");
@@ -45,11 +45,10 @@ export const Logint = () => {
                 console.log(y);
                 localStorage.setItem("user", JSON.stringify(y.data));
                 toast("Login Successfully");
-                myNav("/sigup")
+                // myNav("/sigup")
               })
               .catch((y) => {
                 toast("Login Faild");
-    
                 console.log(y);
               });
          

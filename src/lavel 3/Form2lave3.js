@@ -71,7 +71,9 @@ export const Form2lave3 = () => {
 
     const onSubmited = (e) => {
       e.preventDefault();
-      console.log([first,second,third])
+      console.log(first)
+      console.log(second)
+      console.log(third)
     }  
 
     const  handleReset = () => {
@@ -81,6 +83,18 @@ export const Form2lave3 = () => {
        
       };   
 
+      const handleRemoveClick = index => {
+        const list = [...second];
+        list.splice(index, 1);
+        setsecond(list);
+      };
+
+      const handleRemoveClick2 = index => {
+        const list = [...third];
+        list.splice(index, 1);
+        setthird(list);
+      };
+    
       
 
   return (
@@ -215,11 +229,13 @@ export const Form2lave3 = () => {
             <br />  <br />
 
             <div className="btn-box">
-              
-              {second.length - 1 === i && <button onClick={handleAddClick}>Add</button>}
+            {second.length !== 1 && <button
+                className="mr10"
+                onClick={() => handleRemoveClick(i)}>➖</button>}
+              {second.length - 1 === i && <button onClick={handleAddClick}>➕</button>}
             </div>
             
-            <div>{console.log(second)}</div>
+        
         </div>)
       })}
 
@@ -264,11 +280,14 @@ export const Form2lave3 = () => {
               type="date"
             ></TextField>
             <br />  <br />
-
+          
+          
 
             <div className="btn-box">
-              
-              {third.length - 1 === i && <button onClick={handleAddClick3}>Add</button>}
+            {third.length !== 1 && <button
+                className="mr10"
+                onClick={() => handleRemoveClick2(i)}>➖</button>}
+              {third.length - 1 === i && <button onClick={handleAddClick3}>➕</button>}
             </div>
           </div>
 

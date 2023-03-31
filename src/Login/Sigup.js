@@ -13,7 +13,7 @@ import {
 } from "@mui/material";
 
 export const Sigup = () => {
-  const mynav =useNavigate()
+  // const mynav =useNavigate()
   
     const [data, setdata] = useState({
         FirstName: "",
@@ -54,7 +54,7 @@ export const Sigup = () => {
 
       const logout =() =>{
 localStorage.removeItem("user")
-mynav("/")
+// mynav("/")
       }
     
       return (
